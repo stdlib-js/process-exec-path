@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/process-exec-path",
+  "version": "0.0.0",
+  "description": "Absolute pathname of the executable which started the current Node.js process.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/process-exec-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "node",
+    "nodejs",
+    "exec",
+    "executable",
+    "path",
+    "pathname",
+    "process",
+    "proc"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

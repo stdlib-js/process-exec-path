@@ -24,32 +24,30 @@ limitations under the License.
 
 > Absolute pathname of the executable which started the current Node.js process.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/process-exec-path
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-EXEC_PATH = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.EXEC_PATH;
-})();
-</script>
+var EXEC_PATH = require( '@stdlib/process-exec-path' );
 ```
 
 #### EXEC_PATH
@@ -81,24 +79,14 @@ console.log( EXEC_PATH );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var EXEC_PATH = require( '@stdlib/process-exec-path' );
 
 if ( EXEC_PATH ) {
     console.log( 'Executable: %s', EXEC_PATH );
 } else {
     console.log( 'Not running in Node.js.' );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -178,6 +166,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/process-exec-path/tree/deno
 [umd-url]: https://github.com/stdlib-js/process-exec-path/tree/umd
 [esm-url]: https://github.com/stdlib-js/process-exec-path/tree/esm
+[branches-url]: https://github.com/stdlib-js/process-exec-path/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/process-exec-path/main/LICENSE
 

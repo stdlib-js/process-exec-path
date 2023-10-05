@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,32 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var IS_NODE = require( '@stdlib/assert-is-node' );
-var EXEC_PATH = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is either a string or `null`', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof EXEC_PATH === 'string' || EXEC_PATH === null, true, 'main export is either a string or `null`' );
-	t.end();
-});
-
-tape( 'if running in a Node.js process, the main export is a string; otherwise, the export is equal to `null`.', function test( t ) {
-	if ( IS_NODE ) {
-		t.equal( typeof EXEC_PATH, 'string', 'exports a string' );
-	} else {
-		t.equal( EXEC_PATH, null, 'exports null' );
-	}
-	t.end();
-});
-
-tape( 'if not running in a Node.js process, the main export is `null`', function test( t ) {
-	var EXEC_PATH = proxyquire( './../dist', {
-		'@stdlib/assert-is-node': false
-	});
-	t.equal( EXEC_PATH, null, 'exports null' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });

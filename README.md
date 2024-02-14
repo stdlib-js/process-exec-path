@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/process-exec-path/tags). For example,
+
+```javascript
 import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.0-esm/index.mjs';
 ```
 
@@ -80,7 +85,7 @@ console.log( EXEC_PATH );
 <body>
 <script type="module">
 
-import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.0-esm/index.mjs';
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@esm/index.mjs';
 
 if ( EXEC_PATH ) {
     console.log( 'Executable: %s', EXEC_PATH );

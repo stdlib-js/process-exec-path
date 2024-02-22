@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@esm/index.mjs';
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.1-esm/index.mjs';
 ```
 
 #### EXEC_PATH
@@ -80,7 +80,7 @@ console.log( EXEC_PATH );
 <body>
 <script type="module">
 
-import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@esm/index.mjs';
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.1-esm/index.mjs';
 
 if ( EXEC_PATH ) {
     console.log( 'Executable: %s', EXEC_PATH );

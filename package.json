@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/process-exec-path",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Absolute pathname of the executable which started the current Node.js process.",
   "license": "Apache-2.0",
   "author": {

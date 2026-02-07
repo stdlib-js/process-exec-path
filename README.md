@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@deno/mod.js';
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.3-deno/mod.js';
 ```
 
 #### EXEC_PATH
@@ -75,7 +75,7 @@ console.log( EXEC_PATH );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@deno/mod.js';
+import EXEC_PATH from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-exec-path@v0.2.3-deno/mod.js';
 
 if ( EXEC_PATH ) {
     console.log( 'Executable: %s', EXEC_PATH );

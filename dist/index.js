@@ -1,7 +1,7 @@
-"use strict";var s=function(o,r){return function(){return r||o((r={exports:{}}).exports,r),r.exports}};var i=s(function(l,t){
-var v=require("process"),c=v.execPath;t.exports=c
-});var a=s(function(P,u){
+"use strict";var s=function(o,r){return function(){try{return r||o((r={exports:{}}).exports,r),r.exports}catch(v){throw (r=0, v)}};};var i=s(function(P,t){
+var c=require("process"),E=c.execPath;t.exports=E
+});var a=s(function(_,u){
 u.exports=null
-});var E=require('@stdlib/assert-is-node/dist'),p=i(),q=a(),e;E?e=p:e=q;module.exports=e;
+});var p=require('@stdlib/assert-is-node/dist'),q=i(),x=a(),e;p?e=q:e=x;module.exports=e;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
